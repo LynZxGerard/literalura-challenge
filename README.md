@@ -56,9 +56,9 @@ El sistema incluye funciones como listar libros, filtrar por idioma, identificar
 
 El proyecto está dividido en varios paquetes para mantener una arquitectura limpia y escalable:
 
-- **`com.proyecto.model`**: Contiene las clases `Autor.java` y `Libro.java`, que representan los modelos de datos del proyecto.
+- **`com.proyecto.model`**: Contiene las clases `Author.java` y `Book.java`, asi como `BookResponse.java` que representan los modelos de datos del proyecto.
 - **`com.proyecto.principal`**: Contiene la clase `Principal.java`, que maneja la interacción con el usuario y coordina las operaciones del sistema.
-- **`com.proyecto.repository`**: Contiene la clase `RepositoryLibro.java`, que maneja las consultas a la base de datos y la persistencia de los libros.
+- **`com.proyecto.repository`**: Contiene la clase `RepositoryLibro.java` y `RepositoryAuthor.java`, que maneja las consultas a la base de datos y la persistencia de los libros.
 - **`com.proyecto.service`**: Contiene las clases `ConsumoAPI.java`, `ConversionDatos.java` y la interfaz `IConversionDatos.java`, encargadas de consumir la API de Gutendex, convertir los datos y realizar operaciones relacionadas con la manipulación de los libros y autores.
 
 Con esta estructura modular, el proyecto es fácil de extender y mantener a medida que se añaden nuevas funcionalidades o se realizan mejoras en el sistema.
